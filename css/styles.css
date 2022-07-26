@@ -120,12 +120,20 @@ header .contact-nav li a:focus {
   color: #2196f3;
 }
 
+.icon-header {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+header .contact-nav li a:hover > .icon-header,
+header .contact-nav li a:focus > .icon-header {
+  fill: #2196f3;
+}
 /* END header ==========================*/
 
 /*герой*/
 
 .hero {
-  background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4) ;);
+  background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4));
   background-image: url(../images/hero-title.jpg);
   background-color: #c4c4c4;
 
@@ -224,7 +232,8 @@ header .contact-nav li a:focus {
 }
 .section-dignity ul,
 .section-images ul,
-.section-team ul {
+.section-team ul,
+.section-clients ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -338,10 +347,76 @@ header .contact-nav li a:focus {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
-.section-team .container {
-  margin-bottom: 0;
+
+.social-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
+
+.icon-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  /* gap: 10px; */
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.icon-team:hover,
+.icon-team:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+
 /*END секция команда ==========================*/
+
+/* Клиенты */
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-clients .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients .icon {
+  max-width: 170px;
+}
+
+.clients-icon .four {
+  color: #afb1b8;
+}
+
+.clients-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.icon .clients-icon:focus,
+.icon .clients-icon:hover {
+  fill: #2196f3;
+  border-color: #2196f3;
+  outline-color: #2196f3;
+}
+
+/* END Клиенты ================================*/
 
 /*Проэкт*/
 
@@ -432,5 +507,48 @@ footer address {
 }
 .nav-footer {
   margin-top: 20px;
+}
+
+.title-footer {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.social-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  gap: 10px;
+  border-radius: 50%;
+  fill: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer:hover,
+.icon-footer:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 70px;
 }
 /* END Футер =====================================*/
