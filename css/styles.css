@@ -121,6 +121,10 @@ header .contact-nav li a {
   color: var(--primary-text-color);
 }
 
+.icon-header {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
 header .contact-nav li a:hover,
 header .contact-nav li a:focus {
   color: #2196f3;
@@ -314,6 +318,7 @@ header .contact-nav li a:focus > .icon-header {
 .section-icon {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   max-height: 428px;
   max-width: 270px;
   text-align: center;
@@ -360,8 +365,9 @@ header .contact-nav li a:focus > .icon-header {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+  /* padding-left: 32px;
+  padding-right: 32px; */
+  gap: 10px;
 }
 
 .icon-team {
@@ -370,7 +376,6 @@ header .contact-nav li a:focus > .icon-header {
   align-items: center;
   width: 44px;
   height: 44px;
-  /* gap: 10px; */
   border-radius: 50%;
   fill: #afb1b8;
 }
@@ -467,6 +472,10 @@ header .contact-nav li a:focus > .icon-header {
 
 .filters .project li a img {
   display: block;
+}
+.project-combined:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*END Проэкт ================================*/
 
